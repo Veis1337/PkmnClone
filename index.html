@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Game Name</title>
+  </head>
+  <body>
+    <h1>Basic Javascript Game!</h1>
+	<script language="javascript" src="input.js" type="text/javascript"></script>
+	<script language="javascript" src="main.js" type="text/javascript"></script>
+	
+ 	<script type="text/javascript">
+        // Creates a canvas that we are going to draw on.
+        var canvas = document.createElement("canvas");
+        // The 'context' is used to tell the canvas we want to draw stuff on it.
+        var ctx = canvas.getContext("2d");
+        
+        // We want to change the size of the canvas to a size we want.
+        canvas.width = 640;
+        canvas.height = 480;
+        // Put the canvas onto the webpage so that people can use it!
+        document.body.appendChild(canvas);
+
+        // makes sure that fullscreen can receive key input.
+        canvas.focus();
+            
+        // We have an object called 'game' that we can tell to initialize and start the game loop!
+        init();
+	</script>
+	
+  </body>
+</html>
